@@ -65,7 +65,7 @@ const registerUser = async (req, res) => {
       password: hashedPassword,
     });
 
-    const user = newUser.save();
+    const user = await newUser.save();
 
     const token = await createToken(user._id);
 

@@ -57,6 +57,16 @@ const Collection = () => {
       );
     }
 
+    switch (sortType) {
+      case "low-high":
+        productCopy.sort((a, b) => a.price - b.price);
+        break;
+
+      case "high-low":
+        productCopy.sort((a, b) => b.price - a.price);
+        break;
+    }
+
     setFilterProducts(productCopy);
   };
 
@@ -171,6 +181,7 @@ const Collection = () => {
           <Title text1={"All"} text2={"COLLECTIONS"} />
           <select
             onChange={(e) => setSortType(e.target.value)}
+            value={sortType}
             className="border-2 border-gray-300 text-sm px-2"
           >
             <option value="relavent">Sort by: Relavent</option>
