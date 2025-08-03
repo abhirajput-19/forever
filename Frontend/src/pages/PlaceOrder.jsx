@@ -58,6 +58,8 @@ const PlaceOrder = () => {
           if (data.success) {
             navigate("/orders");
             setCartItems({});
+          } else {
+            navigate("/cart");
           }
         } catch (error) {
           console.log(error);
