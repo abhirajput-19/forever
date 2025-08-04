@@ -47,7 +47,7 @@ forever/
 │   │   └── App.jsx
 │   ├── .env                # Admin env variables
 │   └── package.json
-
+│
 ├── Frontend/               # User-facing eCommerce site (React)
 │   ├── public/
 │   ├── src/
@@ -58,7 +58,7 @@ forever/
 │   │   └── App.jsx
 │   ├── .env                # Frontend env variables
 │   └── package.json
-
+│
 ├── Backend/                # Node.js + Express.js API server
 │   ├── config/             # DB, Cloudinary
 │   ├── controllers/        # Business logic
@@ -68,7 +68,7 @@ forever/
 │   ├── .env                # Backend env variables
 │   ├── package.json
 │   └── server.js           # Entry point
-
+│
 ├── README.md
 └── LICENSE
 ```
